@@ -263,6 +263,8 @@ class DBXUpDown:
 def lambda_handler(event, context):
     """This function should be used on AWS in a Lambda function
     """
+    ### layer update: https://docs.aws.amazon.com/lambda/latest/dg/python-layers.html
+    ### use cloudshell to create the layer
     
     dbx = DBXUpDown(DROPBOX_ACCESS_TOKEN)
     tel = TelegramSidekick(TELEGRAM_TOKEN)
